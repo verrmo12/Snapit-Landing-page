@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Camera, Share2, Shield, Heart, Github, Coffee } from 'lucide-react';
 import AboutUs from './pages/AboutUs';
 import Policy from './pages/Policy';
+import Support from './pages/Support';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <div className="flex space-x-6">
                 <Link to="/" className="text-gray-300 hover:text-purple-400 transition duration-300">Home</Link>
                 <Link to="/about" className="text-gray-300 hover:text-purple-400 transition duration-300">About Us</Link>
+                <Link to="/support" className="text-gray-300 hover:text-purple-400 transition duration-300">Support Us</Link>
                 <Link to="/policy" className="text-gray-300 hover:text-purple-400 transition duration-300">Policy</Link>
               </div>
             </div>
@@ -25,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<AboutUs />} />
           <Route path="/policy" element={<Policy />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
 
